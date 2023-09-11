@@ -110,7 +110,7 @@ onSubmit={searchMovies}>
 
       <h3 className='text-xl text-red-600'>See More </h3>
       </div>
-          <div className="container p-2 max-w-[1200px] mx-auto grid gap-3 grid-cols-3 md:grid-cols-5">
+          <div className="container p-2 max-w-[1200px] mx-auto grid gap-2 grid-cols-3 md:grid-cols-5">
             
         {renderMovies()}
     </div>
