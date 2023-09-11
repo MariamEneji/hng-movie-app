@@ -1,4 +1,4 @@
-This is a movie abb built with React+Vite, tailwind css and tmdb api.
+This is a movie app built with React+Vite, tailwind css and tmdb api.
 Running My Vite Project Locally
 
 Prerequisites:
