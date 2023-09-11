@@ -37,8 +37,8 @@ const Info = () => {
     <div>
     {movie ? (
       <div>
-        <div className='h-screen flex flex-col justify-center items-center p-12'>
-        {movie.poster_path ? <img className="w-[50%] md:w-[30%] h-[70%]" data-testid="movie-poster"  src={`${IMAGE_PATH}${movie.poster_path}`} alt="" /> 
+        <div className=' h-[120vh] flex flex-col justify-center items-center p-12'>
+        {movie.poster_path ? <img className="w-screen md:w-[30%] h-[70%]" data-testid="movie-poster"  src={`${IMAGE_PATH}${movie.poster_path}`} alt="" /> 
         : null
         
         }

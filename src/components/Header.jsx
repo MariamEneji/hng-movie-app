@@ -46,11 +46,11 @@ const Header = () => {
 
 
   return (
-    <div style={backgroundStyle} className='h-[100vh] flex  items-center -z-10'>
+    <div style={backgroundStyle} className='h-[70vh] flex  items-center -z-10'>
       {randomMovie && (
-        <div className='w-[60%] md:w-[35%] text-white ml-16'>
-          <h2 className='text-5xl font-bold mb-4'>{randomMovie.title}</h2>
-          <p className='my-2'>{randomMovie.overview}</p>
+        <div className='w-[60%] md:w-[35%] text-white ml-2 md:ml-12'>
+          <h2 className='text-2xl font-bold mb-4'>{randomMovie.title}</h2>
+          <p className='my-2 text-[14px]'>{randomMovie.overview}</p>
           <p>Release Date: {randomMovie.release_date}</p>
 
           <button className='flex gap-2 items-center my-2 bg-red-600 p-2'><img src={play} alt="" />Play Now</button>

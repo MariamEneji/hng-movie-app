@@ -7,12 +7,12 @@ const MovieCard = ({movie}) => {
   const IMAGE_PATH = "https://image.tmdb.org/t/p/w300"
 
   return (
-    <div className='' data-testid='movie-card'>
+    <div className='mt-4' data-testid='movie-card'>
 
 
       
       <Link to={`/movie/${movie.id}`}>
-      {movie.poster_path ? <img className="w-full h-[80%]" data-testid="movie-poster"  src={`${IMAGE_PATH}${movie.poster_path}`} alt="" /> 
+      {movie.poster_path ? <img className="h-[70%]" data-testid="movie-poster"  src={`${IMAGE_PATH}${movie.poster_path}`} alt="" /> 
         : null
         
         }
