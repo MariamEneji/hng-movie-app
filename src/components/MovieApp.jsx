@@ -71,10 +71,10 @@ const MovieApp = () => {
 
   return (
     <div className=' '>
-      <header className='' >
+      <nav className='' >
 
         
-      <div className='p-6 transparent text-white flex justify-between items-center w-full backdrop-blur   fixed '>
+      <div className='p-2 md:p-6 transparent text-white flex justify-between items-center w-full backdrop-blur   fixed '>
 
         
 <img src={logo} alt="" />
@@ -97,20 +97,20 @@ onSubmit={searchMovies}>
 
 
 <div className="sign flex gap-2 items-center">
-    <h1 className=''>Sign In</h1>
+    
    
     <img src={menu} alt="" />
 </div>
 </div>
 <Header />
-      </header>
+      </nav>
 
-      <div className="flex justify-between items-center my-4 p-8">
-      <h1 className='text-3xl'>Featured Movies</h1>
+      <div className="flex justify-between items-center my-4 p-4">
+      <h1 className='text-3xl font-bold '>Featured Movies</h1>
 
       <h3 className='text-xl text-red-600'>See More </h3>
       </div>
-          <div className="container max-w-[1200px] mx-auto grid gap-2 grid-cols-4">
+          <div className="container p-2 max-w-[1200px] mx-auto grid gap-3 grid-cols-3 md:grid-cols-5">
             
         {renderMovies()}
     </div>

@@ -21,7 +21,7 @@ const MovieCard = ({movie}) => {
         
 
 <h1 className="font-bold" data-testid ="movie-title">{movie.title}</h1>
-<h1>{movie.id}</h1>
+
 
 <h1 data-testid='movie-release-date'>{movie.release_date}</h1>
 <h1>{movie.rating}</h1>
