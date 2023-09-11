@@ -46,7 +46,7 @@ const Header = () => {
 
 
   return (
-    <div style={backgroundStyle} className='h-[70vh] flex  items-center -z-10'>
+    <div style={backgroundStyle} className='h-[65vh] flex  items-center -z-10'>
       {randomMovie && (
         <div className='w-[60%] md:w-[35%] text-white ml-2 md:ml-12'>
           <h2 className='text-2xl font-bold mb-4'>{randomMovie.title}</h2>

@@ -12,7 +12,7 @@ const MovieCard = ({movie}) => {
 
       
       <Link to={`/movie/${movie.id}`}>
-      {movie.poster_path ? <img className="w-full h-[60%]" data-testid="movie-poster"  src={`${IMAGE_PATH}${movie.poster_path}`} alt="" /> 
+      {movie.poster_path ? <img className="w-full h-46 md:h-[80%]" data-testid="movie-poster"  src={`${IMAGE_PATH}${movie.poster_path}`} alt="" /> 
         : null
         
         }
