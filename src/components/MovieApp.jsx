@@ -27,28 +27,28 @@ const MovieApp = () => {
     const API_URL  = "https://api.themoviedb.org/3"
     const [movies, setMovies] = useState([])
   
-    const fetchMovies = async (searchKey) =>  {
+    const fetchMovies = async () =>  {
 
-      const type = searchKey ? "search" : "discover"
+      // const type = searchKey ? "search" : "discover"
   
-      // const {data: {results}} = await axios.get(`${API_URL}/discover/movie/`, {
+      const {data: {results}} = await axios.get(`${API_URL}/movie/top_rated`, {
         
-      //   params: {
-      //     api_key: '4e98374803b820c06025e2176dacb03d'
-      // }
+        params: {
+          api_key: '4e98374803b820c06025e2176dacb03d'
+      }
 
       
-    // })
+    })
 
-    const {data: {results}} = await axios.get(`${API_URL}/${type}/movie`, {
+  //   const {data: {results}} = await axios.get(`${API_URL}/${type}/movie`, {
         
-      params: {
-        api_key: '4e98374803b820c06025e2176dacb03d',
-        query: searchKey
-    }
+  //     params: {
+  //       api_key: '4e98374803b820c06025e2176dacb03d',
+  //       query: searchKey
+  //   }
 
     
-  })
+  // })
 
     
   

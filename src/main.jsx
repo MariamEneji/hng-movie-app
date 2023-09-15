@@ -12,7 +12,7 @@ export default function Main(){
 
       <Route path="/" element = {<App />}  />
 
-      <Route path="/movie/:id" element={<Info/>} />
+      <Route path="/movies/:id" element={<Info/>} />
 
 
 
